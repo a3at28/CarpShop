@@ -1,0 +1,35 @@
+GET http://localhost:8080/client
+
+###
+
+GET http://localhost:8080/client/1
+
+###
+
+GET http://localhost:8080/client/4
+
+###
+
+POST http://localhost:8080/client
+Content-Type: application/json
+
+{
+  "name": "Эдуард",
+  "number": "89874123111",
+  "email": "edik@mail.ru",
+  "shipping_address": "Куюки"
+}
+
+###
+
+PUT http://localhost:8080/client
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Алексей",
+  "number": "89870729343",
+  "email": "Katysha@mail.ru",
+  "shipping_address": "Йошкар-Ола"
+}
+

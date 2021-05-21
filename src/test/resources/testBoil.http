@@ -1,0 +1,35 @@
+GET http://localhost:8080/boils
+
+###
+
+GET http://localhost:8080/boils/1
+
+###
+
+GET http://localhost:8080/boils/manufacturer/2
+
+###
+
+POST http://localhost:8080/boils
+Content-Type: application/json
+
+{
+  "id": 0,
+  "manufacturerId": 2,
+  "name": "Source",
+  "diameter": 20,
+  "weight": 1000,
+  "quantity": 10,
+  "imageURL": "39bc29cc-0ac0-4b57-a1a2-ab1ae6d23e16.jpeg",
+  "price": 1799
+}
+
+###
+
+DELETE http://localhost:8080/boils/8
+
+###
+
+GET http://localhost:8080/boils/search?text=Super
+
+###

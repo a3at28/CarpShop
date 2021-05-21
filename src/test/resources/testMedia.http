@@ -1,0 +1,23 @@
+POST http://localhost:8080/media
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="Classic.jpg"
+Content-Type: image/jpeg
+
+< ./Classic.jpg
+--WebAppBoundary--
+
+###
+
+POST http://localhost:8080/media
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="Complex-T.jpg"
+Content-Type: image/jpeg
+
+< ./Complex-T.jpg
+--WebAppBoundary--
+
+###
