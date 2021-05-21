@@ -1,8 +1,6 @@
-HELP.md
-target/
+/out/
+/target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
 
 ### STS ###
 .apt_generated
@@ -17,17 +15,12 @@ target/
 .idea
 *.iws
 *.iml
-*.ipr
+*.iprgit
 
 ### NetBeans ###
 /nbproject/private/
+/build/
 /nbbuild/
 /dist/
 /nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+/.nb-gradle/git gonfi
